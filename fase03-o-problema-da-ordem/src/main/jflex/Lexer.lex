@@ -36,7 +36,8 @@ Letter = [a-zA-Z]
 Digit  = [0-9]
 Identifier = {Letter}({Letter}|{Digit}|_){0,31}
 
-OversizedIdentifier = {Letter}({Letter}|{Digit}|_){32,}
+OversizedIdentifier = [a-zA-Z][a-zA-Z0-9_]+
+
 %%
 /* ========================================================================= */
 /* REGRAS LÉXICAS (Altere para retornar sym.XXX)                                 */
